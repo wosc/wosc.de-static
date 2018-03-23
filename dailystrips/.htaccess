@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile /home/wosc/public_html/dailystrips/.htpasswd
+AuthName "dailystrips"
+require valid-user
