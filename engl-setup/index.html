@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Musik, Gitarre, Verstärker, MIDI, Engl, Tubeman, Lexicon"/>
+  <title>Amp-Setup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <style type="text/css">
+    .section.is-small {
+      padding: 1.5rem 0.75rem;
+    }
+
+    .content {
+      width: 768px;
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="section is-small">
+  <div class="container">
+    <nav class="breadcrumb is-right has-bullet-separator" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="http://wosc.de">wosc.de</a></li>
+        <li class="is-active"><a href="." aria-current="page">Amp-Setup</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="title is-3">Amp-Setup</h1>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-4">Ziele</h2>
+
+    <div class="content">
+      <ol>
+      <li>Preamp-Kanal und Effekt-Preset mit <em>einem</em> Tritt schalten</li>
+      <li>Zwei Gesamt-Lautstärken (um sich bei Soli vom Hintergund abheben zu können)</li>
+      <li>Möglichst wenig Kabel-Chaos</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-4">Equipment</h2>
+
+    <div class="content">
+      <dl>
+      <dt><a href="http://englamps.de/wp-content/uploads/E365-ba.pdf">Engl Sovereign</a> 110 Vintage 112 (mit Midi-Interface <a href="http://www.englamps.de/portfolio/z-7-midi-interface/">Engl Z-7</a>)</dt>
+      <dd>Vollröhren-Combo mit 4 Kanälen (Clean, Crunch, Soft Lead, Heavy Lead) und zwei Master-Volumina (Master A/B)
+      </ul>
+      </dd>
+
+      <dt><a href="http://hughes-and-kettner.com/company/history">Hughes &amp; Kettner Tubeman MK2</a> (mit Midi-Interface von <a href="http://www.grmusik.de/">GRmusik</a>)</dt>
+      <dd>Röhren-Preamp mit 3 Kanälen (Clean, Crunch, Higain)
+      </dd>
+
+      <dt><a href="http://www.digitech.com/products/gnx1.htm">Digitech GNX1</a></dt>
+      <dd>Multieffektgerät
+      </dd>
+
+      <dt><a href="https://lexiconpro.com/en-US/products/mpx-g2">Lexicon MPX-G2</a> (mit Floorboard MPX-R1)</dt>
+      <dd>Multieffektgerät mit Einschleifweg für Preamp
+      </dd>
+
+      <dt><a href="http://www.grmusik.de/hobby/vswitch/vswitch.html">GRmusik vSwitch</a></dt>
+      <dd>Schaltbare Lautstärke-Absenkung (passiv)</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-4">Umsetzung</h2>
+
+    <div class="content">
+      <p>Ziel (1) wird jeweils durch das Midi-Interface des Verstärkers/Preamps
+      erreicht: Es reagiert auf die Program Change-Nachrichten des Effektgeräts und
+      speichert für jede Preset-Nummer den zugehörigen Preamp-Kanal. Die Bedienung ist
+      denkbar einfach, man wählt ein Preset am Effektgerät an, stellt den gewünschten
+      Kanal am Preamp ein und drückt den &quot;Speichern&quot;-Knopf. Wenn das Preset
+      das nächste Mal angewählt wird, stellt das Midi-Interface automatisch den
+      gespeicherten Kanal ein.
+      </p>
+
+      <p>Ziel (2) ist im Engl durch die zwei Master-Kanäle (A/B) bereits eingebaut,
+      der Master-Kanal kann durch einen Fußschalter gewählt werden. Im mobilen Setup
+      mit dem Tubeman kommt dafür der vSwitch zum Einsatz: er senkt im Normalbetrieb
+      die Gesamtlautstärke passiv etwas ab, diese Absenkung kann auf Fußtritt
+      abgeschaltet werden &ndash; der Ton wird lauter.
+      </p>
+
+      <p>Ziel (3) erledigen zwei von GRmusik angefertigte Multicores.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-4">Mobiles Setup</h2>
+
+    <div class="content">
+      <p><img src="tubeman-digitech.png" /><br/>
+      <em><strong>Abbildung 1:</strong> Mobiles Setup &ndash; Tubeman.</em>
+      </p>
+
+      <p>Der Signalweg geht einfach der Reihe nach durch Preamp, Effektgerät und A/B-Volumen.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-4">Kleines Setup</h2>
+
+    <div class="content">
+      <p><img src="engl-digitech.png" /><br/>
+      <em><strong>Abbildung 2:</strong> Kleines Setup &ndash; Engl mit Digitech.</em>
+      </p>
+
+      <p>Das Digitech hängt im Effektloop des Verstärkers. Alle Verbindungen
+      (Send/Return, Midi, Stromversorgung und A/B-Fußschalter) werden über ein Multicore
+      geführt.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-4">Großes Setup</h2>
+
+    <div class="content">
+      <p><img src="engl-lexicon.png" /><br/>
+      <em><strong>Abbildung 3:</strong> Großes Setup &ndash; Engl mit Lexicon.</em>
+      </p>
+
+      <p>Der Signalweg geht vom Instrument zunächst ins Lexicon (z. B. für
+      Kompressor). Über den Effektloop des Lexicon geht das Signal durch den Preamp,
+      kommt über den Effektloop des Engl zurück ins Lexicon (z. B. für Chorus) und
+      gelangt schließlich über den Poweramp in den Lautsprecher.
+      </p>
+
+      <p>Das Lexicon bietet die Möglichkeit, mit dem Floorboard über ein
+      (vollbelegtes) Midi-Kabel verbunden zu werden, und so In+Out über nur ein Kabel
+      abzuwickeln. Deshalb muss die Verbindung zwischen Floorboard und Lexicon direkt
+      erfolgen, weil das Engl Midi-Interface diese (nicht standardkonforme)
+      Übertragung nicht unterstützt. Vom Midi-Thru des Lexicons werden die
+      Midi-Befehle dann weiter an den Engl geleitet, um den Preamp-Kanal passend zu schalten.
+      </p>
+
+      <p>Die Stromversorgung für das Floorboard ist gleich wie beim Digitech, somit
+      kann das selbe Floor-Multicore in beiden Setups verwendet werden (die Kanäle für
+      Send/Return bleiben im großen Setup einfach unbenutzt).
+      </p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
