@@ -1,3 +1,9 @@
+.PHONY: deploy
+deploy:
+# local:  `git remote add deploy ssh://wosc.de/home/wosc/public_html`
+# remote: `git config --local receive.denyCurrentBranch updateInstead` git>=2.4
+	@git push deploy --force
+
 .PHONY: links
 links: .venv/bin/linkchecker
 	$< --verbose --check-extern http://wosc.de/
