@@ -1,0 +1,1 @@
+.htpasswd filter=git-crypt diff=git-crypt
