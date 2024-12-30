@@ -1,7 +1,2 @@
 /.venv/
-/dailystrips/*.gif
-/dailystrips/*.html
-/dailystrips/*.jpg
-/dailystrips/*.png
-/dailystrips/Dilbert*
-
+/dailystrips/

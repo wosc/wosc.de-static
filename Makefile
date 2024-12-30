@@ -2,12 +2,8 @@
 deploy:
 # local setup:
 #   git remote add deploy ssh://wosc.de/home/wosc/public_html
-#   git crypt init  # https://www.agwa.name/projects/git-crypt/
-#   git crypt add-gpg-user
-#   git crypt export-key woscde.key  # copy to remote
 # remote setup
 #   git config --local receive.denyCurrentBranch updateInstead  # git>=2.4
-#   git crypt unlock woscde.key
 	@git push deploy --force
 
 .PHONY: links
